@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="528.0" prefWidth="554.0" style="-fx-background-color: #142a40;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="50.0" layoutX="17.0" layoutY="470.0" stroke="BLACK" strokeType="INSIDE" width="520.0" />
+        <ScrollPane fx:id="scrollPain" layoutX="17.0" layoutY="61.0" prefHeight="406.0" prefWidth="520.0">
+            <content>
+                <VBox fx:id="vBox" prefHeight="391.0" prefWidth="503.0" />
+            </content>
+        </ScrollPane>
+        <JFXTextField fx:id="txtMsg" layoutX="26.0" layoutY="480.0" onAction="#txtMsgOnAction" prefHeight="26.0" prefWidth="390.0" unFocusColor="BLACK" />
+        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="482.0" layoutY="476.0" onAction="#sendButtonOnAction" prefHeight="26.0" prefWidth="29.0">
+            <graphic>
+                <ImageView fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/send-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic></JFXButton>
+        <Text fx:id="txtLabel" fill="WHITE" layoutX="246.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLIENT">
+            <font>
+                <Font name="Bell MT Bold" size="20.0" />
+            </font>
+        </Text>
+        <JFXButton fx:id="emojiButton" contentDisplay="GRAPHIC_ONLY" layoutX="445.0" layoutY="478.0" prefHeight="34.0" prefWidth="37.0">
+            <graphic>
+                <ImageView fitHeight="26.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/emoji-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton contentDisplay="GRAPHIC_ONLY" layoutX="411.0" layoutY="477.0" onAction="#attachedButtonOnAction" prefHeight="34.0" prefWidth="18.0" text="Button">
+            <graphic>
+                <ImageView fitHeight="21.0" fitWidth="19.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../img/attachment-icon.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>

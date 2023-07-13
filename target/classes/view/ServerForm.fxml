@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#142a40" height="400.0" stroke="TRANSPARENT" strokeType="INSIDE" width="600.0" />
+      <VBox fx:id="vBox" layoutX="5.0" layoutY="73.0" prefHeight="320.0" prefWidth="590.0" style="-fx-background-color: #FFFFFF;" />
+      <Label layoutX="248.0" layoutY="14.0" text="SERVER" textFill="WHITE">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
